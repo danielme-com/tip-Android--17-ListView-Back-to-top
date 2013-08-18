@@ -45,7 +45,7 @@ public class MainActivity extends ListActivity
 			@Override
 			public void onClick(View v)
 			{
-				if (Build.VERSION.SDK_INT < 11) //método estándar
+				if (Build.VERSION.SDK_INT < Build.VERSION_CODES.HONEYCOMB) //método estándar
 				{
 					getListView().setSelection(0);
 				}
